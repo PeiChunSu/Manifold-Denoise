@@ -16,9 +16,7 @@ t= 1:d;
 sigma = 15;
 %Construct data matrix
 X(1:d,:)= sin(t'*theta);
-[p,n] = size(X);
 
-[p,n] = size(X);
 % construct noisy data
 Y = X+sigma*randn(p,n)/sqrt(n);
 X_os = zeros(p,n);
